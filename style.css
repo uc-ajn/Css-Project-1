@@ -5,7 +5,7 @@ Author         : Aayush Jain
 version        : 2
 Created Date   : 10/03/2022
 Updated By     : Aayush Jain
-Repo link      : https: //github.com/uc-ajn/CSS-Project1
+Repo link      : https: //github.com/uc-ajn/Css-Project-1
 Updated Date   : 07/04/2022
  */
 
@@ -86,7 +86,7 @@ img {
   font-weight: bold;
 }
 
-.shape:hover #center {
+.shape:hover .center {
   opacity: 1;
   transform: translateY(0px);
 }
