@@ -1,0 +1,112 @@
+/*
+File Name      : style.css
+Description    : Css project_1.
+Author         : Aayush Jain
+version        : 2
+Created Date   : 10/03/2022
+Updated By     : Aayush Jain
+Repo link      : https: //github.com/uc-ajn/CSS-Project1
+Updated Date   : 07/04/2022
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: url("./images/CSS\ PROJECT\ BG-2.jpg");
+  background-position: center;
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: rgb(95, 90, 90);
+}
+
+#main_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card_container {
+  padding: 40px 45px;
+  display: flex;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  background-color: #f3f3ed9c;
+  height: auto;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  color: rgb(97, 94, 94);
+}
+
+.card {
+  line-height: 1.5;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+
+.shape {
+  width: 140px;
+  height: 140px;
+  float: left;
+  shape-outside: circle();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.shape:hover img {
+  filter: blur(1px);
+  transform: scale(1);
+}
+
+.center {
+  position: absolute;
+  color: white;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.shape:hover #center {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media screen and (max-width: 650px) {
+  .card_container {
+    clip-path: none;
+    margin:10px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .shape {
+    width: 100px;
+    height: 100px;
+  
+  }
+
+}
+
